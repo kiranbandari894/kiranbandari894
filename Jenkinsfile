@@ -3,7 +3,7 @@ pipeline{
   stages{
      stage("Build Master"){
         when{
-           buildingTag()
+           tag '1.2'
         }
          steps{
            echo "Building Tag catched in main"
